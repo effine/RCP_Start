@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="第一个RCP程序" uid="com.verphen.RCP_Start" id="com.verphen.RCP_Start.product" application="com.verphen.RCP_Start.application" useFeatures="false" includeLaunchers="true">
+<product name="第一个RCP程序" uid="com.verphen.RCP_Start" id="com.verphen.RCP_Start.product" application="com.verphen.RCP_Start.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
 
    <configIni use="default">
