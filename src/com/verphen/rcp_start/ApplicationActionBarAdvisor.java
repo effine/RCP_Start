@@ -20,16 +20,14 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 	protected void makeActions(IWorkbenchWindow window) {
 
 		action1 = new Action1(window);
-		action1.setText(" 第一个菜单项 ");
-		action1.setId(" com.verphen.actions.action1 ");
+		action1.setText("第一个菜单项 ");
+		action1.setId("com.verphen.action.action1");
 		register(action1);
 	}
 
 	protected void fillMenuBar(IMenuManager menuBar) {
-		MenuManager newMenu = new MenuManager(" 第一个菜单 ",
-				"com.verphen.firstmenu ");
+		MenuManager newMenu = new MenuManager("第一个菜单", "com.verphen.firstmenu");
 		menuBar.add(newMenu);
 		newMenu.add(action1);
 	}
-
 }

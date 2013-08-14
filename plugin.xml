@@ -25,11 +25,53 @@
       <product
             application="com.verphen.RCP_Start.application"
             name="第一个RCP程序">
-         <property
-               name="appName"
-               value="第一个RCP程序">
-         </property>
+          <property
+             name="preferenceCustomization"
+               value="plugin_customization.ini"/>
+          <property
+                name="appName"
+                value="第一个RCP程序">
+          </property>
       </product>
    </extension>
-
+        
+   <extension
+          id ="com.verphen.actionSet" 
+           name ="我的菜单扩展" 
+           point ="org.eclipse.ui.actionSets" > 
+         <actionSet
+               description ="第一个扩展ActionSet" 
+              id ="RCP_Start.actionSet1" 
+              label ="RCP_Start.actionSet1" 
+              visible ="true" >
+            <menu
+                  icon="icons/alt_window_16.gif"
+                  id="viewMenu"
+                  label="视图菜单"
+                  path="addition">
+               <separator
+                     name="viewMenuSeparator">
+               </separator>
+            </menu> 
+           <action
+                 class="com.verphen.action.Action2"
+                 icon="icons/alt_window_16.gif"
+                 id="RCP_Start.action2"
+                 label="第二个菜单项"
+                 menubarPath="viewMenu/viewMenuSeparator"
+                 toolbarPath="viewMenuSeparator"
+                 tooltip="第二个菜单项按钮"/>
+        </actionSet > 
+     </extension >
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.verphen.view.FirstView"
+            icon="icons/alt_window_16.gif"
+            id="com.verphen.FirstView"
+            name="第一个View"
+            restorable="true">
+      </view>
+   </extension>
+  
 </plugin>
