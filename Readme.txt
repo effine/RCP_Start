@@ -1,3 +1,3 @@
-¹¤³ÌÃèÊö£º
+å·¥ç¨‹æè¿°ï¼š
 
-	Eclipse RCP ³ÌÐòµÄ±àÐ´£¬±àÐ´µÄ³ÌÐòÊÇÒ»¸öEclipseÑùÊ½µÄÈí¼þ  
+	Eclipse RCP ç¨‹åºçš„ç¼–å†™ï¼Œç¼–å†™çš„ç¨‹åºæ˜¯ä¸€ä¸ªEclipseæ ·å¼çš„è½¯ä»¶  
